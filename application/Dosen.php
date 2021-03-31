@@ -1,5 +1,6 @@
 <?php
-require_once ("Pegawai.php")    ;
+
+namespace application;
 
 class Dosen extends Pegawai{
     protected $nidn;
@@ -35,4 +36,3 @@ class Dosen extends Pegawai{
         return $this->jabatan_akademis;
     }
 }
-?>

@@ -1,4 +1,7 @@
 <?php
+
+namespace application;
+
 class User{
 //atribut
     protected $username;
@@ -9,7 +12,7 @@ class User{
         $this->password = $password;        
 }    
     public function login(){
-        return "$this->username berhasil login";
+        return "$this->username Anda Berhasil Login";
     }
     // setter
     public function setUsername($username){

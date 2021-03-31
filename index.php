@@ -1,8 +1,8 @@
 <?php
-require_once ("Mahasiswa.php");
-require_once ("MahasiswaBaru.php");
-require_once ("Dosen.php");
-require_once ("Pegawai.php");
+require_once ("application/Mahasiswa.php");
+require_once ("application/MahasiswaBaru.php");
+require_once ("application/Dosen.php");
+require_once ("application/Pegawai.php");
 
 //Class user
 $user1 = new User ("ini username user1","passwordu1");

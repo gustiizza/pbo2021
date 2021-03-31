@@ -1,5 +1,6 @@
 <?php
-require_once ("User.php");
+
+namespace application;
 
 class Mahasiswa extends User{
 //atribut
@@ -17,7 +18,6 @@ class Mahasiswa extends User{
     public function tampilkanAngkatan(){
         echo "Merupakan angkatan tahun 20".substr($this->nim , 5,-4)."<br>";
     }
-
     public function tampilkanUmur(){
         echo date_diff(date_create($this->tanggal_lahir), date_create('today'))->y;
     }
