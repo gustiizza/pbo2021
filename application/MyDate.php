@@ -1,6 +1,6 @@
 <?php
 
-namespace application;
+namespace App;
 
 class MyDate  
 {
@@ -46,13 +46,4 @@ class MyDate
         $this->year = $year;
     }
 
-}
-namespace application;
-
-class MyDate1
-{
-    public function penanggalan()
-    {
-        return 'Ini tanggal';
-    }
 }

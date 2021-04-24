@@ -1,0 +1,14 @@
+{
+    "name": "g815/pbo2021",
+    "description": "Praktikum PBO",
+    "authors": [{
+        "name": "gustiizza",
+        "email": "gustiizza.64@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "application"
+        }
+    }
+}
