@@ -8,6 +8,11 @@ class Mahasiswa extends User{
     protected $nim;
     protected $tanggal_lahir;
     protected $jenis_kelamin;
+    const AKTIF = 1;
+    const NON_AKTIF = 2;
+    public static $status = self::AKTIF;
+    public static $sks = 3;
+    public static $bobot = 12;
 
     function __construct($nama,$nim,$tl,$jk){
         $this->nama = $nama;
@@ -49,5 +54,20 @@ class Mahasiswa extends User{
     }
     public function getJenisKelamin(){
         return $this->jenis_kelamin;
+    }
+    //static 
+    public static function bergerak()
+    {
+        echo "agen solusi, bukan agen perubahan";
+    }
+    final public function tuntaskan()
+    {
+        self::bergerak();
+        echo 'memperbaiki menjadi lebih baik';
+    }
+    //praktikum08
+    public static function hitungSks()
+    {
+        echo "jumlah SKS nya adalah ". "<b>" . self::$sks * self::$bobot . "<b>" . "<br/>";
     }
 }
